@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Armando Regex</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <div class="">
+      <form action="">
+        <div>
+          <h2>Complete el formulario</h2>
+          <div>
+            <label for="name">Nombre</label>
+            <input type="text" placeholder="Ingrese sus nombres" pattern="[A-Z][a-z]">
+
+            <label for="last">Apellido</label>
+            <input type="text" placeholder="Ingrese sus apellidos">
+          </div><br>
+          <div>
+            <label for="identifier">DNI</label>
+            <input type="text" placeholder="Ingrese su número de DNI" pattern="[0-9]{8}" >
+          </div><br>
+          <div>
+            <label for="birthdate">Fecha de nacimiento</label>
+            <input type="text" placeholder="Ingrese su fecha de nacimiento">
+          </div>
+          <div><br>
+            <label for="cell-phone">Número de Celular</label>
+            <input type="text" placeholder="Ingrese su número de celular" pattern="[0-9]{3}[|-][0-9]{3}[|-][0-9]{3}">
+
+            <label for="phone-house">Número de Teléfono de casa</label>
+            <input type="text" placeholder="Ingrese su teléfono de casa">
+          </div>
+          <div><br>
+            <label for="password">Contraseña</label>
+            <input type="text"placeholder="Ingrese su contraseña">
+
+            <label for="confirm-password">Confirmar ontraseña</label>
+            <input type="text"  placeholder="Confirme su contraseña">
+          </div>
+          <div><br>
+            <label for="comments">Comentarios</label>
+            <input type="text" placeholder="Dejanos un comentario">
+          </div><br>
+          <div>
+            <label for=""></label>
+            <input type="text">
+          </div><br>
+          <div>
+            <input type="checkbox" >
+            <span>Acepto los términos y condiciones</span>
+          </div><br>
+          <button type="text" name="button">Enviar formulario</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
