@@ -1,7 +1,59 @@
 *{
-  text-align: justify;
+  box-sizing: border-box;
   color: #F50087;
   background-color: #FFC0CB;
   font-family: "helvetica";
+  text-decoration: none;
   text-align: center;
+}
+body{
+  margin: 0;
+  padding: 50px;
+}
+div{
+  margin: 14px;
+  padding: 30px;
+}
+.input-namelast{
+  width: 44.6%;
+}
+.input-dni{
+  width: 90%;
+}
+.input-dni{
+  width: 90%;
+}
+.input-date{
+  width: 90%;
+}
+.input-phone{
+  width: 44.6%;
+}
+.input-pass{
+  width: 44.6%;
+}
+.input-comments{
+  width: 90%;
+  height: 100px;
+}
+.check{
+  width: auto;
+}
+span{
+  font-size: 10px;
+  width: auto;
+}
+.ingresar{
+  background-color: #F50087;
+  color: #fff;
+  width: auto;
+}
+form input{
+  width: 300px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+::-webkit-input-placeholder{
+  color: #F50087;
 }

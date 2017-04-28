@@ -8,50 +8,22 @@
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-    <div class="">
+    <h1>Complete el formulario de registro</h1>
       <form action="">
-        <div>
-          <h2>Complete el formulario</h2>
-          <div>
-            <label for="regex-name">Nombre</label>
-            <input type="text" placeholder="Ingrese sus nombres" pattern="[A-Z][a-z]+">
-            <br>
-            <label for="regex-last">Apellido</label>
-            <input type="text" placeholder="Ingrese sus apellidos" pattern="[A-Z][a-z]+">
-          </div><br>
-          <div>
-            <label for="regex-identifier">DNI</label>
-            <input type="text" placeholder="Ingrese su número de DNI" pattern="[0-9]{8}" >
-          </div><br>
-          <div>
-            <label for="regex-birthdate">Fecha de nacimiento</label>
-            <input type="text" placeholder="Ingrese su fecha de nacimiento" pattern="^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$">
-          </div>
-          <div><br>
-            <label for="regex-cell-phone">Número de celular</label>
-            <input type="text" placeholder="Ingrese su número de celular" pattern="[0-9]{9}">
-            <br>
-            <label for="regex-phone-house">Número deteléfono de casa</label>
-            <input type="text" placeholder="Ingrese su teléfono de casa" pattern="[0-9]{3}[|-][0-9]{4}">
-          </div>
-          <div><br>
-            <label for="regex-password">Contraseña</label>
-            <input type="text"placeholder="Ingrese su contraseña" pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$">
-            <br>
-            <label for="regex-confirm-password">Confirmar contraseña</label>
-            <input type="text"  placeholder="Confirme su contraseña" pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$">
-          </div>
-          <div><br>
-            <label for="regex-comments">Comentarios</label>
-            <input type="text" placeholder="Dejanos un comentario">
-          </div><br>
-          <div>
-            <input type="checkbox" >
-            <span>Acepto los términos y condiciones</span>
-          </div><br>
-          <button type="text" name="button">Enviar formulario</button>
+        <div class="contenedor-campo">
+          <input type="text" class="input-namelast" placeholder="Ingrese su(s) nombre(s)" pattern="[A-Z][a-záéíóúñÁÉÍÓÚÑ-']+" title="Coloque la inicial de su nombre en mayúscula" required>
+          <input type="text" class="input-namelast" placeholder="Ingrese su(s) apellido(s)" pattern="[A-Z][a-záéíóúñÁÉÍÓÚÑ-']+" title="Coloque la inicial de su apellido en mayúscula" required><br>
+          <input type="text" class="input-dni"      placeholder="Ingrese su número de DNI" pattern="[0-9]{8}" title="Coloque los 8 dígitos de su DNI" required><br>
+          <input type="text" class="input-date"     placeholder="Ingrese su fecha de nacimiento" pattern="^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$" title="Coloque su fecha de nacimiento separado con -,.,/"><br>
+          <input type="text" class="input-phone"    placeholder="Ingrese su número de celular" pattern="[0-9]{9}" title="Ingrese los 9 dígitos de su celular" required>
+          <input type="text" class="input-phone"    placeholder="Ingrese su teléfono de casa" pattern="[0-9]{7}" title="Ingrese los 7 dígitos de su teléfono de casa" required><br>
+          <input type="password" class="input-pass" placeholder="Ingrese su contraseña" title="Ingrese una contraseña entre 8 y 16 caracteres">
+          <input type="password" class="input-pass" placeholder="Confirme su contraseña" title="Vuelva a ingresa su misma contraseña"><br>
+          <input type="text" class="input-comments" placeholder="Dejanos un comentario" title="Podrá ingresar un comentario de solo 500 caractes como máximo." required><br>
+          <input type="checkbox"class="check" required>
+            <span>Acepto los términos y condiciones</span><br><br>
+          <input type="submit" class="ingresar" value="Enviar">
         </div>
-      </form>
-    </div>
+    </form>
   </body>
 </html>
